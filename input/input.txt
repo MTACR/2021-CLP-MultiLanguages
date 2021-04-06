@@ -1,0 +1,5 @@
+string
+strin aqui tem que contar o numero de vezes que a palavra string vai aparecer
+isso inclui todas linhas
+string
+o resultado deveria ser string 3
