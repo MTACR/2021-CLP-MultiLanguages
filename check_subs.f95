@@ -1,4 +1,10 @@
-function substring(string, slen, sub) result (oc_count)
+module fortmodule
+use iso_c_binding
+implicit none
+
+contains
+
+function substring(string, slen, sub) bind(C) result (oc_count)
 	integer, intent(in) :: slen
 	integer (kind=1), intent(in) :: string(slen), sub(21)
 	integer :: oc_count
@@ -19,4 +25,6 @@ function substring(string, slen, sub) result (oc_count)
 		end if
 	end do
 end function substring
+
+end module
 
