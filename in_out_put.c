@@ -4,7 +4,7 @@ int substring(char* string, size_t* len, char* sub);
 
 int main(int argc, char **argv)
 {
-	char file_name[30] = "input/test_1.txt";
+	char file_name[30] = "input/input.txt";
 	char to_comp[21];
 	char* line = NULL;
 	size_t len = 0;
