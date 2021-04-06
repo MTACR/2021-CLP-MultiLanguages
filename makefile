@@ -1,6 +1,6 @@
 test: in_out_put.o check_subs.o
 	gcc check_subs.o in_out_put.o -lgfortran -o test
-	
+	rm -rf in_out_put.o check_subs.o fortmodule.mod
 
 in_out_put.o: in_out_put.c
 	gcc -c in_out_put.c
