@@ -16,11 +16,11 @@ int main(int argc, char **argv)
 		int i;
 		char c;
 		   
-		for(i = 0; (c = getc(file)) != '\n'; i++){
+		for(i = 0; (c = getc(file)) != '\n' && c != '\r' && c != ' '; i++){
 			to_comp[i] = c;
 		}
 		to_comp[i] = 0;
-		
+
 		while ((read = getline(&line, &len, file)) != -1) {				
 			oc_count += substring(line, &read, to_comp); 
 		}		
