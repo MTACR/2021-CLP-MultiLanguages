@@ -1,5 +1,5 @@
-function substring(string, slen, sub) result (oc_count)
-	integer, intent(in) :: slen
+function substring(string, slen, sub) BIND(C) result (oc_count)
+    integer, intent(in) :: slen
 	integer (kind=1), intent(in) :: string(slen), sub(21)
 	integer :: oc_count
 	integer :: i = 1, j = 1

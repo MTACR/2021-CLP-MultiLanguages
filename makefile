@@ -1,5 +1,6 @@
 test: in_out_put.o check_subs.o 
 	gcc in_out_put.o check_subs.o -o in_out_put -lgfortran
+	rm -rf in_out_put.o check_subs.o
 
 in_out_put.o: in_out_put.c
 	gcc -c in_out_put.c

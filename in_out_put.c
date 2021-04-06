@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int substring_(char* string, size_t* len, char* sub);
+int substring(char* string, size_t* len, char* sub);
 
 int main(int argc, char **argv)
 {
@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 		to_comp[i] = 0;
 		
 		while ((read = getline(&line, &len, file)) != -1) {				
-			oc_count += substring_(line, &read, to_comp); 
+			oc_count += substring(line, &read, to_comp); 
 		}		
 		
 		printf("Total de ocorrencias: %d\n", oc_count);
